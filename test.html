@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>test</title>
+    <link rel="stylesheet" href="home.css" />
+    <script
+      src="https://kit.fontawesome.com/98638255fc.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      body {
+        margin: 0;
+      }
+
+      /* header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 1rem;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 3rem;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin-right: 1rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* dropdown */
+      .dropdown {
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        display: none;
+      }
+
+      .parent:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #1ec7e8;
+      }
+
+      /* main */
+      main {
+        padding: 2rem;
+      }
+
+      .im {
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .ad {
+        width: 100%;
+      }
+
+      .product {
+        width: calc(33.333% - 10px);
+        margin-bottom: 1rem;
+      }
+
+      .product img {
+        width: 100%;
+        height: auto;
+      }
+
+      .nv {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1%;
+        justify-content: flex-start;
+      }
+
+      .product span {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .product strike,
+      .product s {
+        text-decoration: line-through;
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      /* header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 1rem;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 3rem;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin-right: 1rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* dropdown */
+      .dropdown {
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        display: none;
+      }
+
+      .parent:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #1ec7e8;
+      }
+
+      /* main */
+      main {
+        padding: 2rem;
+      }
+
+      .im {
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        width: 100%;
+        max-width: 1000px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+      }
+
+      .ad {
+        width: 100%;
+      }
+
+      .product {
+        width: calc(33.333% - 10px);
+        margin-bottom: 1rem;
+      }
+
+      .product img {
+        width: 100%;
+        height: auto;
+      }
+
+      .nv {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1%;
+        justify-content: flex-start;
+      }
+
+      .product span {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .product strike,
+      .product s {
+        text-decoration: line-through;
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+
+      body {
+        margin: 0;
+      }
+
+      /* header */
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: black;
+        color: white;
+        padding: 1rem;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+      }
+
+      .logo img {
+        height: 3rem;
+      }
+
+      nav {
+        display: flex;
+        align-items: center;
+      }
+
+      nav ul {
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      nav ul li {
+        margin-right: 1rem;
+      }
+
+      nav ul li a {
+        color: white;
+        text-decoration: none;
+      }
+
+      /* dropdown */
+      .dropdown {
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+        padding: 12px 16px;
+        display: none;
+      }
+
+      .parent:hover .dropdown {
+        display: block;
+      }
+
+      .dropdown a:hover {
+        background-color: #1ec7e8;
+      }
+
+      /* main */
+      main {
+        padding: 2rem;
+      }
+
+      .im {
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        width: auto;
+        max-width: 300px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+       
+      }
+
+      .ad {
+        max-width: 100%;
+      }
+
+      .product {
+        width: calc(33.333% - 10px);
+        margin-bottom: 1rem;
+      }
+
+      .product img {
+        width: 100%;
+        height: auto;
+      }
+
+      .nv {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 1%;
+        justify-content: flex-start;
+      }
+
+      .product span {
+        display: block;
+        margin-top: 0.5rem;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+
+      .product strike,
+      .product s {
+        text-decoration: line-through;
+        display: inline-block;
+        margin-right: 0.5rem;
+      }
+
+      .product a {
+        display: block;
+        text-align: center;
+        margin-top: 1rem;
+        text-decoration: none;
+        color: #fff;
+        background-color: #1ec7e8;
+        padding: 0.5rem;
+        border-radius: 4px;
+      }
+
+      /* scroll to top button */
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+
+
+      /* scroll to top button */
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+
+
+      /* scroll to top button */
+      #myBtn {
+        display: none;
+        position: fixed;
+        bottom: 20px;
+        right: 30px;
+        z-index: 99;
+        font-size: 18px;
+        border: none;
+        outline: none;
+        background-color: red;
+        color: white;
+        cursor: pointer;
+        padding: 15px;
+        border-radius: 4px;
+      }
+
+      #myBtn:hover {
+        background-color: #555;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <!-- header -->
+    <div class="search-warp">
+      <div class="cnt">
+          <div class="logo">
+              <a href=""><img src="//res.yame.vn/Content/images/yame-f-logo-white.png?v=20231127_2" /></a>
+          </div>
+          <div class="">
+              <ul>
+                  <li class="children parent">
+                      <a href="">Bộ Sưu Tập</a>
+                      <ul class="dropdown">
+                          <li><a>Beginner (Thể Thao)</a></li>
+                          <li><a>Premium (Đơn Giản Cao Cấp)</a></li>
+                          <li><a>No Style & Cosmo (Đơn Giản Giá Tốt)</a></li>
+                          <li><a>Seventy Seven (Hot Trend, Giá Tốt)</a></li>
+                          <li><a>Cool Touch (Vải Làm Mát)</a></li>
+                          <li><a>Wrinkle Free (Vải Ít Nhăn)</a></li>
+                          <li><a>The Day's Eye (Fan Của Hoa Cúc)</a></li>
+                          <li><a>The Seafarer (Thủy Thủ)</a></li>
+                          <li><a>Miền Gió Cát (Fan Của Màu Be)</a></li>
+                          <li><a>SPEED (Fan Của Xe F1)</a></li>
+                          <li><a>One Piece x YaMe</a></li>
+                          <li><a>JHS (Fan của Nhật Bản)</a></li>
+                          <li><a>Di Sản (Fan Cứng Của YaMe)</a></li>
+                      </ul>
+                  </li>
+                  <li class="children parent">
+                      <a href=""> SALE THẦN TỐC</a>
+                      <ul class="dropdown">
+                          <li><a>Áo Khoác Sale 50%</a></li>
+                          <li><a>Áo Sơ Mi Sale 50%</a></li>
+                          <li><a>Áo Thun Sale</a></li>
+                          <li><a>Áo Polo Sale</a></li>
+                          <li><a>Quần Dài Sale</a></li>
+                          <li><a>Quần Short Sale</a></li>
+                      </ul>
+                  </li>
+                  <li class="children parent">
+                      <a href="">SALE PK CHỐNG NẮNG</a>
+                      <ul class="dropdown">
+                          <li><a>Sale 30% Nón</a></li>
+                          <li><a>Sale 50% Balo</a></li>
+                          <li><a>Sale 50% Túi Đeo</a></li>
+                          <li><a>Sale 30% Khăn Tắm-GYM</a></li>
+                          <li><a>Sale 30% Giày Da-Giày đi bộ</a></li>
+                          <li><a>Sale 50% Găng Tay</a></li>
+                      </ul>
+                  </li>
+                  <li class="children">
+                      <a href="">Mới</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div>
+  <div class="im">
+      <div class="container">
+          <a href="" class="ad"><img src="https://cmsv2.yame.vn/uploads/1d662b0e-f7e2-48a7-99fb-8b87574ffb01/Sale_%c3%a1o_kho%c3%a1c_%c3%a1o_s%c6%a1_mi.jpg?quality=80&w=0&h=0" /></a>
+          <a href="" class="ad"><img src="https://cmsv2.yame.vn/uploads/0e5611bf-69ac-4dae-aa7e-d5adec8270e0/Banner_MB_Beginner_Fix.jpg?quality=80&w=0&h=0" /></a>
+          <h5 style="font-weight: 700">Bộ sưu tập Thể Thao Beginner</h5>
+          <div class="nv">
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-3-lo-soi-nhan-tao-thoang-mat-tron-dang-om-the-thao-beginner-03-0023142/33edf0d8-4a16-4900-6a9f-001b2fe912b8.jpg?w=540&h=756" /></a>
+                  <span style="text-decoration: line-through">97</span>
+                  <span style="color: #ff0000">&nbsp;78</span>
+              </div>
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/quan-short-lung-thun-tren-goi-vai-du-mong-nhe-bieu-tuong-dang-vua-the-thao-beginner-04-0023152/a6ac50eb-0674-0900-df24-001b31e1ce27.jpg?w=540&h=756" /></a>
+                  <span style="text-decoration: line-through">117</span>
+                  <span style="color: #ff0000">&nbsp;94</span>
+              </div>
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/quan-short-lung-thun-duoi-goi-vai-du-mong-nhe-bieu-tuong-dang-vua-the-thao-beginner-06-0023164/3f35e884-4fc7-0800-2398-001b31e04b48.jpg?w=540&h=756" /></a>
+                  <span style="text-decoration: line-through">177</span>
+                  <span style="color: #ff0000">&nbsp;142</span>
+              </div>
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/ao-thun-co-tron-3-lo-soi-nhan-tao-thoang-mat-tron-dang-om-the-thao-beginner-03-0023142/bafd17a1-85f5-4a00-f731-001b2fe912b9.jpg?w=540&h=756&c=true" /></a>
+                  <span style="text-decoration: line-through">97</span>
+                  <span style="color: #ff0000">&nbsp;78</span>
+              </div>
+              <div><a>XEM THÊM CÁC SẢN PHẨM KHÁC</a></div>
+          </div>
+          <a href="" class="ad"><img src="https://cmsv2.yame.vn/uploads/2ec2edf7-c87b-4d71-9ded-4edab042aec5/banner-homapage-270324.jpg?quality=80&w=0&h=0" /></a>
+          <h5 style="font-weight: 700">Bộ sưu tập The Seafarer (Thủy Thủ)</h5>
+          <div class="nv">
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/ao-polo-the-seafarer-10-0022787/7d890659-6b6d-0100-2568-001b2b3174af.jpg?w=540&h=756" /></a>
+                  <span>287</span>
+              </div>
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/quan-short-the-seafarer-14-0022791/98334ff0-dd48-9400-39a3-001b2b36c807.jpg?w=540&h=756" /></a>
+                  <span>287</span>
+              </div>
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/ao-polo-the-seafarer-09-0022786/992a9785-d15a-6700-df66-001b2b36353a.jpg?w=540&h=756" /></a>
+                  <span>357</span>
+              </div>
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/quan-short-lung-thun-tren-goi-vai-thun-thoang-mat-bieu-tuong-dang-rong-bst-thiet-ke-the-seafarer-14-0023151/5d04d37c-9733-a500-2a1d-001b2b3728df.jpg?w=540&h=756" /></a>
+                  <span>287</span>
+              </div>
+              <div><a>XEM THÊM CÁC SẢN PHẨM KHÁC</a></div>
+          </div>
+          <a href="" class="ad"><img src="https://cmsv2.yame.vn/uploads/2e755c99-605e-4861-9236-f858377f3642/sale.jpg?quality=80&w=0&h=0" /></a>
+          <h5 style="font-weight: 700">SIÊU SALE PHỤ KIỆN</h5>
+          <div class="nv">
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/balo-daily-khoi-nguyen-13-0022702/86f7ee91-49e9-0100-bd69-001abd705bab.jpg?w=540&h=756" /></a>
+                  <span style="text-decoration: line-through">297</span>
+                  <span style="color: #ff0000">&nbsp;178</span>
+              </div>
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/balo-daily-nguyen-ban-m8-0022813/7e9c85d6-5969-0100-d4c0-001ada7fee23.jpg?w=540&h=756" /></a>
+                  <span style="text-decoration: line-through">197</span>
+                  <span style="color: #ff0000">&nbsp;158</span>
+              </div>
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/balo-modern-nguyen-ban-m6-0022322/f752a5e2-816c-cd00-b007-001a6acc7e8e.jpg?w=540&h=756" /></a>
+                  <span style="text-decoration: line-through">447</span>
+                  <span style="color: #ff0000">&nbsp;268</span>
+              </div>
+              <div class="product">
+                  <a href=""><img src="https://cdn2.yame.vn/pimg/balo-daily-khoi-nguyen-12-0022658/565191b4-62c5-0e00-0019-001ad0d93236.jpg?w=540&h=756" /></a>
+                  <span style="text-decoration: line-through">457</span>
+                  <span style="color: #ff0000">&nbsp;274</span>
+              </div>
+              <div><a>XEM THÊM CÁC SẢN PHẨM KHÁC</a></div>
+          </div>
+          <h5 style="font-weight: 700">Bộ sưu tập Premium</h5>
+          <div class="nv">
+              <div class=""></div>
+          </div>
+      </div>
+  </div>
+
+    <script src="home.js"></script>
+  </body>
+  <footer></footer>
+</html

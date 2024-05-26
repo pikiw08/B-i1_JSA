@@ -1,0 +1,31 @@
+body {
+  margin-top: 10%;
+  display: flex;
+  color: aliceblue;
+  justify-content: center;
+
+  background-image: url("https://thuthuatnhanh.com/wp-content/uploads/2023/06/hinh-nen-may-tinh-4k-don-gian-ma-dep-chill.jpg");
+}
+form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.private {
+  width: 600px;
+}
+.item {
+  text-align: center;
+}
+.btn {
+  width: 100%;
+}
+.btn:hover {
+  background-color: #bb0000;
+}
+.btn {
+  background-color: #ff3333;
+}
+.P {
+  display: block;
+}
